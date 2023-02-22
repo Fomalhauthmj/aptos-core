@@ -36,7 +36,7 @@ impl BlockExecutorTransaction for PreprocessedTransaction {
 }
 
 // Wrapper to avoid orphan rule
-pub(crate) struct AptosTransactionOutput(TransactionOutputExt);
+pub struct AptosTransactionOutput(TransactionOutputExt);
 
 impl AptosTransactionOutput {
     pub fn new(output: TransactionOutputExt) -> Self {

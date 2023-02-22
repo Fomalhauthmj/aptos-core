@@ -18,7 +18,7 @@ use move_core_types::{
     vm_status::VMStatus,
 };
 
-pub(crate) struct AptosExecutorTask<'a, S> {
+pub struct AptosExecutorTask<'a, S> {
     vm: AptosVM,
     base_view: &'a S,
 }
